@@ -2853,3 +2853,29 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Mobile Frame Effect */
+.mobile-frame {
+  background: #111;
+  padding: 12px;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  max-width: 280px;
+  margin: auto;
+}
+
+.mobile-frame img {
+  border-radius: 20px;
+}
+
+/* Thumbnail Style */
+.app-thumb {
+  border-radius: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.app-thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
