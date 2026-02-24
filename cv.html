@@ -1,19 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Download Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishal Jat | Backend Developer Resume</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #111827;
+    font-size: 28px;
+}
+
+.role {
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #1e40af;
+}
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #777;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+}
+</style>
 </head>
+
 <body>
 
+<div class="container">
+    <h1>Vishal Jat</h1>
+    <div class="role">Backend Developer | Node.js & Laravel Specialist</div>
+
+    <div class="description">
+        Results-driven Backend Developer with 3+ years of experience building 
+        scalable, secure, and high-performance web applications. Experienced in 
+        RESTful API development, authentication systems, real-time features, 
+        and payment integrations. Passionate about writing clean, maintainable 
+        code and delivering reliable solutions aligned with business goals.
+        <br><br>
+        Your resume download should begin automatically.
+    </div>
+
+    <a href="assets/update_vishal_Jat_Resume_2026.pdf" 
+       download="Vishal_Jat_Resume.pdf" 
+       class="download-btn">
+       Download Resume
+    </a>
+
+    <div class="footer-text">
+        If the download does not start automatically, please click the button above.
+    </div>
+</div>
+
 <script>
-    window.onload = function() {
-        const link = document.createElement('a');
-        link.href = "assets/update_vishal_Jat_Resume_2026.pdf";
-        link.download = "Vishal_Jat_Resume.pdf"; // Download file name
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+window.onload = function() {
+    const link = document.createElement('a');
+    link.href = "assets/update_vishal_Jat_Resume_2026.pdf";
+    link.download = "Vishal_Jat_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
 </script>
 
 </body>
