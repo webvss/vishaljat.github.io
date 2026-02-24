@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Resume</title>
+</head>
+<body>
+
+<script>
+    window.onload = function() {
+        const link = document.createElement('a');
+        link.href = "assets/update_vishal_Jat_Resume_2026.pdf";
+        link.download = "Vishal_Jat_Resume.pdf"; // Download file name
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+</script>
+
+</body>
+</html>
